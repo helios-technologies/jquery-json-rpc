@@ -5,12 +5,14 @@ This is JSON RPC 2.0 (Remote Procedure Call) client implementation based on jQue
 Forked from: http://plugins.jquery.com/project/jsonRPC2
 
 How to use it:
-~~~~~~ {ruby}
+
+~~~~~~ {javascript}
 $.jsonRpc('functionName', ['param1', 'param2'], onSuccessCallback, onErrorCallback);
 ~~~~~~
 
 Configuration:
-~~~~~~ {ruby}
+
+~~~~~~ {javascript}
 $.jsonRpcSetup({
     namespace: 'default',
     url: '/api/json-rpc'
