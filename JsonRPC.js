@@ -51,7 +51,7 @@
             // create query object in json-rpc format
             var query = {
                 jsonrpc: '2.0',
-                method: apiNamespace + '.' + functionName,
+                method: functionName,
                 id: id,
                 params: params
             };
@@ -69,7 +69,6 @@
                         if (id != data.id && data.id !== 'fixture') {
                             handleExceptions(exceptions.BadResponseId);
                         }
-                        
                         //callback.apply(this, [{result: data.result, error: data.error}]);
                         callback.apply(this, [data.result, data.error]);
                     } else {
